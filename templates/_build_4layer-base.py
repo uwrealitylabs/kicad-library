@@ -1,4 +1,4 @@
-"""Build the 4layer-base KiCad template from the twinspora project.
+"""Build the 4layer-base KiCad template from the twin28xx project.
 
 - .kicad_pro: keep all settings; replace project-name and sheet references with template values.
 - .kicad_pcb: keep header + setup block (stackup, design rules, pre-defined sizes, plot params),
@@ -10,7 +10,7 @@ import re
 import uuid
 from pathlib import Path
 
-SRC_DIR = Path(r"D:\gh\twinspora\twinspora")
+SRC_DIR = Path(r"D:\gh\twin28xx\twin28xx")
 DST_DIR = Path(r"D:\gh\library\templates\4layer-base")
 NAME = "4layer-base"
 
@@ -19,7 +19,7 @@ NAME = "4layer-base"
 ROOT_UUID = str(uuid.uuid4())
 
 # ---------- .kicad_pro ----------
-pro = json.loads((SRC_DIR / "twinspora.kicad_pro").read_text(encoding="utf-8"))
+pro = json.loads((SRC_DIR / "twin28xx.kicad_pro").read_text(encoding="utf-8"))
 
 pro["meta"]["filename"] = f"{NAME}.kicad_pro"
 pro["schematic"]["top_level_sheets"] = [
@@ -35,9 +35,9 @@ pro["boards"] = []
 
 # ---------- .kicad_pcb ----------
 # Keep everything from the start through the closing `)` of the (setup ...) block.
-# In the twinspora file that ends at line 153 (1-indexed). We detect it robustly by
+# In the twin28xx file that ends at line 153 (1-indexed). We detect it robustly by
 # tracking paren depth from the line where `(setup` starts.
-pcb_lines = (SRC_DIR / "twinspora.kicad_pcb").read_text(encoding="utf-8").splitlines()
+pcb_lines = (SRC_DIR / "twin28xx.kicad_pcb").read_text(encoding="utf-8").splitlines()
 
 setup_start = next(i for i, ln in enumerate(pcb_lines) if ln.strip().startswith("(setup"))
 depth = 0
@@ -62,7 +62,7 @@ tail = "\n\t(embedded_fonts no)\n)\n"
 # Read the source schematic's generator/version lines so the template matches the
 # installed KiCad version. Then emit a minimal, empty schematic that references
 # ROOT_UUID and has a cleared title_block.
-src_sch = (SRC_DIR / "twinspora.kicad_sch").read_text(encoding="utf-8").splitlines()
+src_sch = (SRC_DIR / "twin28xx.kicad_sch").read_text(encoding="utf-8").splitlines()
 version_line = next(ln for ln in src_sch if ln.strip().startswith("(version"))
 gen_line = next(ln for ln in src_sch if ln.strip().startswith("(generator "))
 gen_ver_line = next(ln for ln in src_sch if ln.strip().startswith("(generator_version"))
@@ -100,7 +100,7 @@ info = """<!DOCTYPE html>
 <h1>4-Layer Base</h1>
 <p>4-layer JLCPCB-compatible stackup (NP-155F, 1.6mm finished thickness)
 with design rules, net classes, pre-defined track/via sizes, and default
-graphical text styles inherited from the Twinspora project.</p>
+graphical text styles inherited from the Twin28xx project.</p>
 <ul>
 <li>Layers: F.Cu / In1.Cu / In2.Cu / B.Cu (signal)</li>
 <li>Dielectric: Nan Ya Plastics NP-155F (er 4.4 / 4.43)</li>
