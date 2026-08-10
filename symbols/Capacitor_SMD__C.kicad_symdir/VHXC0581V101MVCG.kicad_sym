@@ -35,7 +35,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD__C:CAP-SMD_BD6.3-L6.6-W6.6-LS7.2-FD"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.8"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
