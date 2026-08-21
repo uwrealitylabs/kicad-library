@@ -261,7 +261,7 @@
 		(uuid "e50df15d-1556-4451-87c6-9f1de99fc2bb")
 	)
 	(embedded_fonts no)
-	(model "../../packages3d/MUX__C.3dshapes/UQFN-16_L2.6-W1.8-P0.40-BL.step"
+	(model "${KIPRJMOD}/../library/packages3d/MUX__C.3dshapes/UQFN-16_L2.6-W1.8-P0.40-BL.step"
 		(offset
 			(xyz -914.4001133 685.7994817 0)
 		)
@@ -272,7 +272,7 @@
 			(xyz 0 0 0)
 		)
 	)
-	(model "/Users/isaacchiu/Documents/GitHub/Giris/hw/library/packages3d/MUX__C.3dshapes/UQFN-16_L2.6-W1.8-P0.40-BL.step"
+	(model "${KIPRJMOD}/../library/packages3d/MUX__C.3dshapes/UQFN-16_L2.6-W1.8-P0.40-BL.step"
 		(offset
 			(xyz 0 0 0)
 		)

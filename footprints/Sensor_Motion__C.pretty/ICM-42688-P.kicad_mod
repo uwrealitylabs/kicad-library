@@ -45,7 +45,7 @@
   (pad 12 smd rect (at 0.500 -0.9 0) (size 0.300 0.600) (layers F.Cu F.Paste F.Mask))
   (pad 13 smd rect (at 0.000 -0.9 0) (size 0.300 0.600) (layers F.Cu F.Paste F.Mask))
   (pad 14 smd rect (at -0.500 -0.9 0) (size 0.300 0.600) (layers F.Cu F.Paste F.Mask))
-  (model ${KIPRJMOD}/library/packages3d/Sensor_Motion__C.3dshapes/ICM-42688-P.stp
+  (model "${KIPRJMOD}/../library/packages3d/Sensor_Motion__C.3dshapes/ICM-42688-P.stp"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))

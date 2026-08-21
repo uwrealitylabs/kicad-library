@@ -238,7 +238,7 @@
   (fp_text user ${REFERENCE} (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ../../packages3d/MCU__C.3dshapes/QFN-68_L8.0-W8.0-P0.40-BL-EP6.7.step
+  (model "${KIPRJMOD}/../library/packages3d/MCU_WCH__C.3dshapes/QFN-68_L8.0-W8.0-P0.40-BL-EP6.7.step"
     (at (xyz -0.010508 0.036004 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))

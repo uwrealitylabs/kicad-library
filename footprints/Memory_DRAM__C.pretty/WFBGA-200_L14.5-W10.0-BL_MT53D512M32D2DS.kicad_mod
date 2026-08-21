@@ -424,7 +424,7 @@
 	(fp_line (start 7.25 -5.00) (end 7.25 5.00) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 7.25 5.00) (end -7.25 5.00) (layer F.CrtYd) (width 0.05))
 	(fp_poly (pts (xy -7.326185 5.076190) (xy -6.986186 5.076190) (xy -7.326185 4.736191) (xy -7.326185 5.076190)) (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS"))
-	(model "${KIPRJMOD}/library/packages3d/Memory_DRAM__C.3dshapes/WFBGA-200_L14.5-W10.0-BL_MT53D512M32D2DS.step"
+	(model "${KIPRJMOD}/../library/packages3d/Memory_DRAM__C.3dshapes/WFBGA-200_L14.5-W10.0-BL_MT53D512M32D2DS.step"
 		(offset (xyz 0.000 0.000 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

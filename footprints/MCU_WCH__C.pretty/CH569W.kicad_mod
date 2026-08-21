@@ -91,7 +91,7 @@
   (fp_text user REF** (at 0.000038 8.199949) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ${KIPRJMOD}/library/packages3d/MCU_WCH__C.3dshapes/CH569W.step
+  (model "${KIPRJMOD}/../library/packages3d/MCU_WCH__C.3dshapes/CH569W.step"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))

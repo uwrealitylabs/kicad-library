@@ -69,7 +69,7 @@
   (fp_text user ${REFERENCE} (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ../../packages3d/MUX__C.3dshapes/SOT-23-THN-16_L4.0-W2.0-P0.50-LS3.3-BL.step
+  (model "${KIPRJMOD}/../library/packages3d/MUX__C.3dshapes/SOT-23-THN-16_L4.0-W2.0-P0.50-LS3.3-BL.step"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

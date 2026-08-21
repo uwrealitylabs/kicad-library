@@ -51,7 +51,7 @@
   (fp_text user REF** (at 0 6) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ${KIPRJMOD}/library/packages3d/MCU_WCH__C.3dshapes/CH32X035G8U6.step
+  (model "${KIPRJMOD}/../library/packages3d/MCU_WCH__C.3dshapes/CH32X035G8U6.step"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

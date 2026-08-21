@@ -511,7 +511,7 @@
   (fp_text user ${REFERENCE} (at -0.000076 0.000025) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ../../packages3d/MCU_STM32__C.3dshapes/UFQFPN-48_L7.0-W7.0-P0.50-BL-EP5.6.step
+  (model "${KIPRJMOD}/../library/packages3d/MCU_STM32__C.3dshapes/UFQFPN-48_L7.0-W7.0-P0.50-BL-EP5.6.step"
     (at (xyz -0.000003 -0.000001 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))

@@ -43,7 +43,7 @@
   (fp_text user ${REFERENCE} (at 0.000013 0.225006) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ../../packages3d/Connector_XH2.54__C.3dshapes/HDR-TH_6P-P2.50-V-F-2.step
+  (model "${KIPRJMOD}/../library/packages3d/Connector_XH2.54__C.3dshapes/HDR-TH_6P-P2.50-V-F-2.step"
     (at (xyz 0 -0.008858 -0.137795))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -180))

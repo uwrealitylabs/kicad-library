@@ -26,7 +26,7 @@
   (fp_text user ${REFERENCE} (at 0.000025 -0.501016) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ../../packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_7P-P1.00_XY-SH1.0-7A51.step
+  (model "${KIPRJMOD}/../library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_7P-P1.00_XY-SH1.0-7A51.step"
     (at (xyz 0 0.010276 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

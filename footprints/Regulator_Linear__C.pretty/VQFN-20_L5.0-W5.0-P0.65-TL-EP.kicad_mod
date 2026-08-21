@@ -944,7 +944,7 @@
 		(uuid "4755711e-81b0-4e5f-8e12-55ca3d868501")
 	)
 	(embedded_fonts no)
-	(model "../../packages3d/Regulator_Linear__C.3dshapes/VQFN-20_L5.0-W5.0-P0.65-TL-EP.step"
+	(model "${KIPRJMOD}/../library/packages3d/Regulator_Linear__C.3dshapes/VQFN-20_L5.0-W5.0-P0.65-TL-EP.step"
 		(offset
 			(xyz 0 0 0)
 		)

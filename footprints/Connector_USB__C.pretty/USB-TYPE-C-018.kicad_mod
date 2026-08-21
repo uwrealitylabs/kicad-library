@@ -41,7 +41,7 @@
   (fp_text user REF** (at 0.001016 9.094056) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ${KIPRJMOD}/library/packages3d/Connector_USB__C.3dshapes/USB-TYPE-C-018.step
+  (model "${KIPRJMOD}/../library/packages3d/Connector_USB__C.3dshapes/USB-TYPE-C-018.step"
     (at (xyz 0 -0.045041 -0.03937))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -180))

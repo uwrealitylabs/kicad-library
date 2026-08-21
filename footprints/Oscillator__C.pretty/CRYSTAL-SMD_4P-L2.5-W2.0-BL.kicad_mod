@@ -28,7 +28,7 @@
   (fp_text user ${REFERENCE} (at -0.113995 0.114542) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ../../packages3d/Oscillator__C.3dshapes/CRYSTAL-SMD_4P-L2.5-W2.0-BL.step
+  (model "${KIPRJMOD}/../library/packages3d/Oscillator__C.3dshapes/CRYSTAL-SMD_4P-L2.5-W2.0-BL.step"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

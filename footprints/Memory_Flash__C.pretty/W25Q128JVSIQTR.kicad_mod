@@ -27,7 +27,7 @@
   (fp_text user REF** (at 0 7.530099) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ${KIPRJMOD}/library/packages3d/Memory_Flash__C.3dshapes/W25Q128JVSIQTR.step
+  (model "${KIPRJMOD}/../library/packages3d/Memory_Flash__C.3dshapes/W25Q128JVSIQTR.step"
     (at (xyz 0.065 -0.112 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

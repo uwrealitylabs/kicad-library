@@ -21,7 +21,7 @@
   (fp_text user ${REFERENCE} (at 0.03175 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ../../packages3d/Antenna__C.3dshapes/ANT-SMD_CA-C03.step
+  (model "${KIPRJMOD}/../library/packages3d/Antenna__C.3dshapes/ANT-SMD_CA-C03.step"
     (at (xyz 0.000551 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -180))

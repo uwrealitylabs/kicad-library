@@ -23,7 +23,7 @@
   (fp_text user ${REFERENCE} (at 0 0) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ../../packages3d/Connector_Pogo__C.3dshapes/CONN-SMD_YTC1P-8535-01.step
+  (model "${KIPRJMOD}/../library/packages3d/Connector_Pogo__C.3dshapes/CONN-SMD_YTC1P-8535-01.step"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

@@ -28,7 +28,7 @@
   (fp_text user ${REFERENCE} (at 0 0.000051) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ../../packages3d/Transistor_FET__C.3dshapes/SOT-23_L2.9-W1.3-P1.90-LS2.4-BR.step
+  (model "${KIPRJMOD}/../library/packages3d/Transistor_FET__C.3dshapes/SOT-23_L2.9-W1.3-P1.90-LS2.4-BR.step"
     (at (xyz 0.000001 -0.000002 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -180))

@@ -27,7 +27,7 @@
   (fp_text user ${REFERENCE} (at 0.000038 0.00889) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ../../packages3d/BEAD__C.3dshapes/L0402.step
+  (model "${KIPRJMOD}/../library/packages3d/BEAD__C.3dshapes/L0402.step"
     (at (xyz 0.245 0.035 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

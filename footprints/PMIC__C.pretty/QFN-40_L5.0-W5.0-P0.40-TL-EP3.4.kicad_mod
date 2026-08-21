@@ -65,7 +65,7 @@
 
 	
 	
-	(model "${KIPRJMOD}/library/packages3d/PMIC__C.3dshapes/QFN-40_L5.0-W5.0-H0.9-P0.4-TL-EP.step"
+	(model "${KIPRJMOD}/../library/packages3d/PMIC__C.3dshapes/QFN-40_L5.0-W5.0-H0.9-P0.4-TL-EP.step"
 		(offset (xyz 0.000 0.000 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

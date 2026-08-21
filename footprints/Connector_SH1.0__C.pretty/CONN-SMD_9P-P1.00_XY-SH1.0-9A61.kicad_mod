@@ -28,7 +28,7 @@
   (fp_text user ${REFERENCE} (at -0.008001 0.479997) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (model ../../packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_9P-P1.00_XY-SH1.0-9A61.step
+  (model "${KIPRJMOD}/../library/packages3d/Connector_SH1.0__C.3dshapes/CONN-SMD_9P-P1.00_XY-SH1.0-9A61.step"
     (at (xyz 0 -0.01378 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
