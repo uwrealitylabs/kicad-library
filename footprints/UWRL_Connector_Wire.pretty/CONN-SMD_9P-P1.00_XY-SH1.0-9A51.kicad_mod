@@ -1,0 +1,205 @@
+(footprint "CONN-SMD_9P-P1.00_XY-SH1.0-9A51"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "CONN-SMD_9P-P1.00_XY-SH1.0-9A51 footprint")
+	(tags "CONN-SMD_9P-P1.00_XY-SH1.0-9A51 footprint C19272012")
+	(property "Reference" "REF**"
+		(at 0.000025 -4.152019 0)
+		(layer "F.SilkS")
+		(uuid "7237f4ff-1dfa-462f-a95a-2a5839d5a286")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CONN-SMD_9P-P1.00_XY-SH1.0-9A51"
+		(at 0.000025 3.149987 0)
+		(layer "F.Fab")
+		(uuid "e3d7b143-c851-47c7-918c-b907515d9a96")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8b0be20e-0ffa-4b9d-9678-8061b3c1984c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c2bcf98-6e68-4c71-907c-83be7953be3f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5.849987 0.081153)
+		(end -5.849987 1.149987)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d6f72d1c-fb4f-4347-a19e-77873c1df8c3")
+	)
+	(fp_line
+		(start -5.849987 1.149987)
+		(end -4.53114 1.149987)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "24ba04b4-2fcc-422b-bb28-3c6644f04a97")
+	)
+	(fp_line
+		(start -4.469012 -2.152019)
+		(end 4.496012 -2.152019)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cbe43990-2db7-46bb-b5ef-08cad10e5ff8")
+	)
+	(fp_line
+		(start 4.531166 1.149987)
+		(end 5.850038 1.149987)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d673260f-6620-4253-bb1a-f0b13f7717da")
+	)
+	(fp_line
+		(start 5.850038 1.149987)
+		(end 5.850038 0.081153)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c16d3868-6785-4259-812b-5554f56bd92d")
+	)
+	(fp_poly
+		(pts
+			(xy -4.70701 1.657988) (xy -5.088011 1.276988) (xy -5.088011 1.911989)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "96bf43d7-eb19-453c-948c-c4be656064f4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.000025 -0.501016 0)
+		(layer "F.Fab")
+		(uuid "0da37ed8-961f-436f-b2e3-7790429d21c7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -4.000051 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d44c37fe-324f-4c39-b9d8-cb87deaa088a")
+	)
+	(pad "2" smd rect
+		(at -3.000051 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ff8fc5af-ccfe-47ff-a7ee-ccadf24b945e")
+	)
+	(pad "3" smd rect
+		(at -2.000051 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4ce03d9b-99ff-41e3-b419-3641d210962b")
+	)
+	(pad "4" smd rect
+		(at -1.000051 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3b8964dd-ad9f-4ee2-b8cb-234e4db83b67")
+	)
+	(pad "5" smd rect
+		(at -0.000051 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e1087727-6c70-4bf4-b8b7-f7f964a49d36")
+	)
+	(pad "6" smd rect
+		(at 0.999949 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d60436db-1777-44c0-8215-c80353e910e1")
+	)
+	(pad "7" smd rect
+		(at 1.999949 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f64e2ac0-cfd0-4dfe-bb86-ef079442ebe1")
+	)
+	(pad "8" smd rect
+		(at 2.999949 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "302d94a1-0197-4e4e-b998-5d9e9bc126ca")
+	)
+	(pad "9" smd rect
+		(at 3.999949 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0e16d96a-e34a-4b76-8c8e-f1aea54c0eb5")
+	)
+	(pad "10" smd rect
+		(at 5.299924 -1.149987)
+		(size 1.2 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "beee37aa-93fa-44d9-9d93-f1582fdef8c9")
+	)
+	(pad "11" smd rect
+		(at -5.300025 -1.149987)
+		(size 1.2 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "741657a1-84bf-4d67-9161-beb3b4f68f37")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/kicad-library/3dmodels/UWRL_Connector_Wire.3dshapes/CONN-SMD_9P-P1.00_XY-SH1.0-9A51.step"
+		(offset
+			(xyz 0 0.2379979964 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
