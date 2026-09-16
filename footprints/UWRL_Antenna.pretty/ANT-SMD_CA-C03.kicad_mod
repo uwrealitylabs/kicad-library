@@ -1,0 +1,180 @@
+(footprint "ANT-SMD_CA-C03"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "ANT-SMD_CA-C03 footprint")
+	(tags "ANT-SMD_CA-C03 footprint C2838842")
+	(property "Reference" "REF**"
+		(at 0.03175 -3.4 0)
+		(layer "F.SilkS")
+		(uuid "993029e9-429b-4494-86b3-f1bec850cbc0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "ANT-SMD_CA-C03"
+		(at 0.03175 3.4 0)
+		(layer "F.Fab")
+		(uuid "58b00681-a0ac-48d4-9a18-054b046d69ae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bc5a946b-526d-4af8-bb33-9fd9cc4e8056")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ad7cc6c9-9fd2-4c01-a074-02766ccfcd5b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.302007 1.4)
+		(end 3.429007 1.4)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c77941ca-78fd-4981-b98a-eeca700b539c")
+	)
+	(fp_line
+		(start 3.365507 -1.4)
+		(end -3.365507 -1.4)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2926a21f-dfa5-49ba-ad18-94e639121d45")
+	)
+	(fp_poly
+		(pts
+			(xy 1.143002 -1.4) (xy 1.651003 -1.4) (xy 1.651003 1.4) (xy 1.143002 1.4)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "cb4b285a-c13e-4cb1-aed9-4df58d584f54")
+	)
+	(fp_poly
+		(pts
+			(xy 1.143002 -1) (xy 1.651003 -1) (xy 1.651003 1) (xy 1.143002 1)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "a607c9bb-5fe1-4b95-ab0b-2943f6a89a87")
+	)
+	(fp_circle
+		(center -2.750064 1)
+		(end -2.720091 1)
+		(stroke
+			(width 0.059995)
+			(type solid)
+		)
+		(fill no)
+		(layer "Rescue")
+		(uuid "b8eb789f-2633-42b7-b808-598f1d2581d7")
+	)
+	(fp_poly
+		(pts
+			(xy -2.750013 -1) (xy -2.249987 -1) (xy -2.249987 1) (xy -2.750013 1)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Rescue")
+		(uuid "1616238d-a3de-429d-b4da-c1758d2c5607")
+	)
+	(fp_poly
+		(pts
+			(xy -2.750013 1) (xy -2.750013 -1) (xy 2.749987 -1) (xy 2.749987 1)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Rescue")
+		(uuid "8e77fe44-b298-4bbb-bf39-1354d8b4360d")
+	)
+	(fp_poly
+		(pts
+			(xy 2.750013 1) (xy 2.249987 1) (xy 2.249987 -1) (xy 2.750013 -1)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "Rescue")
+		(uuid "e29458bc-a0d3-4105-a785-35b567081153")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.03175 0 0)
+		(layer "F.Fab")
+		(uuid "dca0f317-178c-4c13-939c-a08d65ddd882")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.649987 0)
+		(size 1.5 2.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "35fd45dd-53c9-4e83-9d1d-12671476d4e8")
+	)
+	(pad "2" smd rect
+		(at 2.649987 0)
+		(size 1.5 2.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0489ebae-bd1c-4a22-89de-0a2dd4f8658a")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/kicad-library/3dmodels/UWRL_Antenna.3dshapes/ANT-SMD_CA-C03.step"
+		(offset
+			(xyz 0.01399539979 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -180)
+		)
+	)
+)

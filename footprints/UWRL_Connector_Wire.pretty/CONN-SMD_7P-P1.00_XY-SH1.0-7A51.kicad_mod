@@ -1,0 +1,193 @@
+(footprint "CONN-SMD_7P-P1.00_XY-SH1.0-7A51"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "CONN-SMD_7P-P1.00_XY-SH1.0-7A51 footprint")
+	(tags "CONN-SMD_7P-P1.00_XY-SH1.0-7A51 footprint C19272010")
+	(property "Reference" "REF**"
+		(at 0.000025 -4.152019 0)
+		(layer "F.SilkS")
+		(uuid "b8a94a0b-fed7-461d-a00a-3a94c2fd2394")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CONN-SMD_7P-P1.00_XY-SH1.0-7A51"
+		(at 0.000025 3.149987 0)
+		(layer "F.Fab")
+		(uuid "5e5ae889-c0f4-4eb7-9a7e-b38d4704631e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aeb7fade-d28a-4009-b3e8-8b528b956304")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98ee73b1-02ca-4678-964f-df65ff531b0c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -4.849987 0.081153)
+		(end -4.849987 1.149987)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b7ff4965-812d-4e8c-963c-aca194614374")
+	)
+	(fp_line
+		(start -4.849987 1.149987)
+		(end -3.53114 1.149987)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9229dfd4-fc40-4979-b0d4-826b0ab5fc94")
+	)
+	(fp_line
+		(start -3.469012 -2.152019)
+		(end 3.469012 -2.152019)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "84242526-2ed5-48bf-b5dc-f79ae7d4181c")
+	)
+	(fp_line
+		(start 3.531166 1.149987)
+		(end 4.850038 1.149987)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c4fe3550-61c0-4836-b354-7ffc3e00055e")
+	)
+	(fp_line
+		(start 4.850038 1.149987)
+		(end 4.850038 0.081153)
+		(stroke
+			(width 0.254001)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dcb0e505-358e-4143-a349-0f91cbf03d3b")
+	)
+	(fp_poly
+		(pts
+			(xy -3.70701 1.657988) (xy -4.088011 1.276988) (xy -4.088011 1.911989)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "d75163b2-a4d8-4f8a-b484-fed85f4045b6")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.000025 -0.501016 0)
+		(layer "F.Fab")
+		(uuid "100ec7dc-ab96-4d27-89fd-70ac2ca1d0ae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.000051 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "49c899ef-fbde-42c6-b5ce-94d5f821bc18")
+	)
+	(pad "2" smd rect
+		(at -2.000051 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "02589a9e-86f9-4412-a03e-864eb8e751f4")
+	)
+	(pad "3" smd rect
+		(at -1.000051 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "18364e73-6ca9-49bc-b4a5-55d33d6b2e22")
+	)
+	(pad "4" smd rect
+		(at -0.000051 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2c30816c-c440-433c-bbd6-b3155173cb7c")
+	)
+	(pad "5" smd rect
+		(at 0.999949 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a73e3add-4c4b-4bc7-8e80-08421e4a24a2")
+	)
+	(pad "6" smd rect
+		(at 1.999949 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ef0de235-6853-42cd-8393-c29b4b1f4c6d")
+	)
+	(pad "7" smd rect
+		(at 2.999949 1.149987)
+		(size 0.6 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e12ef695-96b3-4262-a715-cbe3249a5cbf")
+	)
+	(pad "8" smd rect
+		(at 4.299924 -1.149987)
+		(size 1.2 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "849ea7e5-0010-4ba9-a4a2-852730e100ab")
+	)
+	(pad "9" smd rect
+		(at -4.300025 -1.149987)
+		(size 1.2 2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a74aa249-0ead-4ec1-8726-dc8bb7ccd59d")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/kicad-library/3dmodels/UWRL_Connector_Wire.3dshapes/CONN-SMD_7P-P1.00_XY-SH1.0-7A51.step"
+		(offset
+			(xyz 0 0.2610103961 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

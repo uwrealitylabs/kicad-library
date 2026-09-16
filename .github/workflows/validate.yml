@@ -1,0 +1,14 @@
+name: validate
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    container: kicad/kicad:10.0
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/validate.py
+        env:
+          KICAD_STOCK_FOOTPRINTS: /usr/share/kicad/footprints

@@ -1,0 +1,209 @@
+(footprint "W25Q128JVSIQTR"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "W25Q128JVSIQTR footprint")
+	(tags "W25Q128JVSIQTR footprint C97521")
+	(property "Reference" "REF**"
+		(at 0 -5.530099 0)
+		(layer "F.SilkS")
+		(uuid "a2b2924b-8d12-49fc-8be9-f4bcebfab848")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "W25Q128JVSIQTR"
+		(at 0 5.530099 0)
+		(layer "F.Fab")
+		(uuid "f0cfbd6d-3b62-48c0-85b2-fb03a90e66fd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4bd2d514-8805-48c3-ba32-f67f89d082cf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "55e591ae-5619-4987-acf7-82f2dfae3f1d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.63871 -2.176403)
+		(end 2.63871 -2.176403)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "32edebfa-2fef-4193-9a45-502ce1feb850")
+	)
+	(fp_line
+		(start -2.63871 2.176403)
+		(end -2.63871 -2.176403)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "00402a91-63e6-4870-867a-9ff7fd4b572d")
+	)
+	(fp_line
+		(start 2.63871 -2.176403)
+		(end 2.63871 2.176403)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8b0ebdef-d98f-4164-b64a-e740b4b99c44")
+	)
+	(fp_line
+		(start 2.63871 2.176403)
+		(end -2.63871 2.176403)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6ede132e-915c-4872-853f-d36869bc272b")
+	)
+	(fp_circle
+		(center -2.672339 3.530099)
+		(end -2.522225 3.530099)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "02069ecb-1d1d-422d-a336-c2c704af6b27")
+	)
+	(fp_circle
+		(center -2.58509 3.920041)
+		(end -2.555118 3.920041)
+		(stroke
+			(width 0.059995)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "3095d7c5-1ba9-4fc5-8f5c-65be205967a3")
+	)
+	(fp_circle
+		(center -1.905004 1.423927)
+		(end -1.75489 1.423927)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "5394e1e3-4f0c-48b9-8aea-7f3c5e46589e")
+	)
+	(fp_circle
+		(center -1.905004 4.350013)
+		(end -1.75489 4.350013)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8af3be73-cd21-4956-b039-1d4473cf3c30")
+	)
+	(fp_text user "REF**"
+		(at 0 7.530099 0)
+		(layer "F.Fab")
+		(uuid "d20c4279-1ad0-4de5-9899-e8c470c77bae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd oval
+		(at -1.905004 3.530099)
+		(size 0.629997 2.250013)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ae566610-fe95-49cd-9777-07cc3c27531e")
+	)
+	(pad "2" smd oval
+		(at -0.635001 3.530099)
+		(size 0.629997 2.250013)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e2364309-fd55-4d41-8bdd-fa1b6b5f9a95")
+	)
+	(pad "3" smd oval
+		(at 0.635001 3.530099)
+		(size 0.629997 2.250013)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e2d0206f-5fac-405b-aa5c-5070492a3ee0")
+	)
+	(pad "4" smd oval
+		(at 1.905004 3.530099)
+		(size 0.629997 2.250013)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "eb1d672d-3b6a-4d94-896a-5b8f3eb9d341")
+	)
+	(pad "5" smd oval
+		(at 1.905004 -3.530099)
+		(size 0.629997 2.250013)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "aab4ea87-7cd4-4edc-9017-48d0f62f2b91")
+	)
+	(pad "6" smd oval
+		(at 0.635001 -3.530099)
+		(size 0.629997 2.250013)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "34a870d3-0c86-4322-8797-7fa58297cd0a")
+	)
+	(pad "7" smd oval
+		(at -0.635001 -3.530099)
+		(size 0.629997 2.250013)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "29243573-4283-4e04-b9bc-1954bf790ffb")
+	)
+	(pad "8" smd oval
+		(at -1.905004 -3.530099)
+		(size 0.629997 2.250013)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "94199285-030e-49a9-943c-e4d3dad230fc")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/kicad-library/3dmodels/UWRL_Memory.3dshapes/W25Q128JVSIQTR.step"
+		(offset
+			(xyz 1.650999975 -2.844799957 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

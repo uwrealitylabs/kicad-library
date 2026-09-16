@@ -1,0 +1,7 @@
+.validate-tmp/
+*-backups/
+*.lck
+*.kicad_prl
+fp-info-cache
+~*.lck
+.DS_Store
