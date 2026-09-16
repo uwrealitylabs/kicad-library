@@ -16,10 +16,14 @@ project.
 cd kicad-library
 git checkout main
 git pull origin main
-git checkout -b part/ap2210k-3.3
+git checkout -b part/ap2210k-3.3-<your-github-username>
 ```
 
-Branch names: `part/<mpn-lowercase>` for a new part, `fix/<what>` for a correction.
+Branch names: `part/<mpn-lowercase>` for a new part, `fix/<what>` for a correction. The onboarding
+part is the one exception: everyone makes the same AP2210K-3.3, so add your GitHub username to the
+branch. The reference for it is pull request
+[#4](https://github.com/uwrealitylabs/kicad-library/pull/4), which stays open as the example and
+is never merged.
 
 ## Validate
 
@@ -48,7 +52,7 @@ the part is, who makes it, and which package: the log is the changelog.
 ## Push and open the pull request
 
 ```sh
-git push -u origin part/ap2210k-3.3
+git push -u origin part/ap2210k-3.3-<your-github-username>
 ```
 
 Open the link Git prints (or go to the repository, Pull requests, New pull request, pick your
@@ -64,7 +68,8 @@ Attach a screenshot with the symbol and the footprint next to the datasheet's pi
 compare exactly that, and it turns a day of back and forth into ten minutes.
 
 ![A pull request on the library repo](img/submit-01-pull-request.png)
-*A pull request on the library. CI (validate.py) reports at the bottom of the conversation.*
+*The reference pull request for the AP2210K-3.3 (#4). CI (validate.py) reports at the bottom of the
+conversation.*
 
 ## Review and merge
 
@@ -77,7 +82,8 @@ CI runs `scripts/validate.py` on every push. The reviewer checks:
 - `Datasheet` is the manufacturer PDF; `MPN`, `Manufacturer`, `LCSC` filled
 
 Requested changes: edit in KiCad, commit on the same branch, push again. The pull request updates.
-Once merged, delete the branch.
+Once merged, delete the branch. The onboarding pull request gets the same review and is then closed
+instead of merged; the library keeps only one copy of each part.
 
 ## Bring the merged part into your board
 

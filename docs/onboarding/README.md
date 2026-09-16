@@ -35,4 +35,9 @@ We go through your symbol and footprint against the datasheet together, then you
 
 - Library: <https://github.com/uwrealitylabs/kicad-library> (symbols, footprints, 3D models, templates)
 - Rules for parts and the review checklist: [CONTRIBUTING.md](../../CONTRIBUTING.md)
+- The reference pull request for the worked example: <https://github.com/uwrealitylabs/kicad-library/pull/4>
+- Tool-independent pages from the old onboarding that still apply, in the Hardware: Wiki:
+  [Ideation & Requirements](https://www.notion.so/110bc072402f803d8a4bf7d473ec98e8),
+  [Schematic & Layout Theory](https://www.notion.so/110bc072402f804cb8f9e11bff11652b),
+  [Review](https://www.notion.so/110bc072402f801a97a3e28c6bdcf656)
 - Moving an older project onto this library layout: [MIGRATION.md](../../MIGRATION.md)
