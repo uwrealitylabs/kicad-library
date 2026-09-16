@@ -17,6 +17,7 @@ LANGUAGES = {"sh": "shell", "bash": "shell", "zsh": "shell", "shell": "shell", "
              "lisp": "plain text", "kicad": "plain text", "scheme": "plain text"}
 INLINE = re.compile(r"(?P<code>`[^`\n]+`)"
                     r"|(?P<link>\[(?P<ltext>[^\]\n]*)\]\((?P<href>[^)\s]+)\))"
+                    r"|(?P<auto><(?P<aurl>https?://[^>\s]+)>)"
                     r"|(?P<bold>\*\*(?P<btext>[^*\n]+?)\*\*)"
                     r"|(?P<ital>(?<![\w*])[*_](?P<itext>[^*_\n]+?)[*_](?![\w*]))")
 IMAGE = re.compile(r"^!\[(?P<alt>[^\]]*)\]\((?P<src>[^)\s]+)\)\s*$")
@@ -63,6 +64,10 @@ def rich(text, resolve_link, **ann):
                            else rich(m.group("ltext"), resolve_link, **ann))
             else:
                 out.extend(rich(m.group("ltext"), resolve_link, **ann))
+        elif m.group("auto"):   # <https://…>: a link whose text is the address without scheme or trailing slash
+            url = m.group("aurl")
+            shown = re.sub(r"^https?://(www\.)?", "", url).rstrip("/")
+            out.append(_text(shown, link=None if "link" in ann else url, **ann))
         elif m.group("bold"):
             out.extend(rich(m.group("btext"), resolve_link, bold=True, **{k: v for k, v in ann.items() if k != "bold"}))
         elif m.group("ital"):
