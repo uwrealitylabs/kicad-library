@@ -16,5 +16,14 @@
   "04-making-a-footprint.md": "https://app.notion.com/p/4-Making-a-footprint-3ddbc072402f8158b9fddaa69da1faa9",
   "05-submitting-a-part.md": "https://app.notion.com/p/5-Submitting-a-part-3ddbc072402f81da90fee8c4194c7165",
   "06-using-the-part.md": "https://app.notion.com/p/6-Using-the-part-3ddbc072402f8153bbd0ca7307fdebe2"
+ },
+ "fingerprints": {
+  "README.md": "305b5e5f299b3f4fd25f80cd1de1d07d11d4bb62017c511bc242bbd98402dee2",
+  "01-setup.md": "5b455c0ab374e334fd0d0cb2d120fd6e80513d1a3b231b5d2eabf59bb4bb003c",
+  "02-finding-parts.md": "c352fed1c693ed9581fac9a21b1efc0eec6458ce255539f416640f43a781f8e5",
+  "03-making-a-symbol.md": "b6a5dfcb70e4947f98cd130aa73321214d063902f8293d3fd48d3ff558028e46",
+  "04-making-a-footprint.md": "ed19f9850e8e599f424cef3994ead01979eebbc8f52869aa35da23595dbc24ce",
+  "05-submitting-a-part.md": "e25b2f9e33f35c6089a7c8e93e8423f7db5c1f02815bb1ebb65a6f593f52f229",
+  "06-using-the-part.md": "c45d1883362e8c4a203ff0a1e87a349b8f137f69d95ccb82c2d0e5e4f6053ae1"
  }
 }

@@ -4,6 +4,12 @@
     python3 scripts/notion_publish.py --dry-run          # what would be created; one read-only API call (users/me)
     python3 scripts/notion_publish.py --publish          # create the page tree, upload the screenshots
     python3 scripts/notion_publish.py --update           # re-sync bodies of the pages recorded in .notion-pages.json
+    python3 scripts/notion_publish.py --diff             # what differs between Notion and the markdown (read-only)
+    python3 scripts/notion_publish.py --update --force   # overwrite pages that were edited in Notion since the last sync
+
+--update refuses to touch a page whose text changed in Notion since the publisher last wrote it (someone edited
+it there). Run --diff, carry the edits into the markdown, then --update --force. Every --update writes a JSON
+backup of each page to ~/.local/state/notion/backups/ before deleting anything.
 
 Token: ~/.local/state/notion/kicad-onboarding.token (0600, never printed). The index page body is the README
 with its list of numbered docs replaced by the child pages themselves; links between docs become page mentions;
@@ -13,6 +19,7 @@ import json, mimetypes, os, pathlib, posixpath, re, sys, time, urllib.error, url
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from notion_markdown import convert, plain, rich, strip_meta  # noqa: E402
+import notion_guard as guard  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DOCS_DIR = pathlib.Path(os.environ.get("KICAD_ONBOARDING_DOCS", ROOT / "docs" / "onboarding"))  # override for tests
@@ -164,7 +171,8 @@ def show(name, blocks, images):
 
 def main(argv):
     mode = argv[0] if argv else "--dry-run"
-    if mode not in ("--dry-run", "--publish", "--update"):
+    force = "--force" in argv[1:]
+    if mode not in ("--dry-run", "--publish", "--update", "--diff"):
         print(__doc__)
         return 2
     dry = mode == "--dry-run"
@@ -178,10 +186,10 @@ def main(argv):
     print(f"token ok: {me.get('name')} in {me.get('bot', {}).get('workspace_name')}")
     child_names = {f for f, _ in DOCS}
     state = json.loads(STATE.read_text()) if STATE.is_file() else {}
-    if mode == "--update" and not state.get("index"):
+    if mode in ("--update", "--diff") and not state.get("index"):
         print(f"{STATE}: no recorded pages; run --publish first")
         return 1
-    ids = dict(state.get("children", {})) if mode == "--update" else {}
+    ids = dict(state.get("children", {})) if mode in ("--update", "--diff") else {}
     uploads = {"_client": client}
 
     if dry:
@@ -195,6 +203,32 @@ def main(argv):
             total += len(blocks)
         print(f"\n{len(docs)} pages, {total} blocks; no writes performed")
         return 0
+
+    pages = [("README.md", state.get("index"))] + [(f, state.get("children", {}).get(f)) for f, _ in DOCS]
+    if mode == "--diff":
+        for key, pid in pages:
+            blocks, _ = convert_doc(DOCS_DIR / key, ids, uploads, dry=True)
+            if key == "README.md":
+                before, after = split_index(blocks, child_names)
+                blocks = before + after
+            d = guard.text_diff(client, pid, blocks, key)
+            print(d if d else f"== {key}: Notion matches the markdown")
+        return 0
+
+    if mode == "--update":   # refuse to overwrite a page somebody edited in Notion; back everything up first
+        stale = []
+        for key, pid in pages:
+            now = guard.fingerprint(client, pid)
+            was = state.get("fingerprints", {}).get(key)
+            if now != was:
+                stale.append((key, "no fingerprint recorded" if was is None else "edited in Notion since the last sync"))
+        if stale and not force:
+            for key, why in stale:
+                print(f"REFUSING {key}: {why}")
+            print("run --diff, carry the Notion edits into the markdown, then --update --force")
+            return 1
+        for key, pid in pages:
+            print(f"backup {guard.snapshot(client, pid, key)}")
 
     if mode == "--publish":
         index = client.create_page({"database_id": DATABASE_ID}, {
@@ -226,6 +260,8 @@ def main(argv):
             client.delete_children(state["children"][fname])
         client.append(state["children"][fname], blocks)
         print(f"{fname}: {len(blocks)} blocks -> {state['urls'].get(fname, state['children'][fname])}")
+    state["fingerprints"] = {key: guard.fingerprint(client, pid) for key, pid in
+                             [("README.md", state["index"])] + [(f, state["children"][f]) for f, _ in DOCS]}
     STATE.write_text(json.dumps(state, indent=1))
     print(f"index: {state.get('index_url', state['index'])}   ({client.calls} API calls)")
     return 0
