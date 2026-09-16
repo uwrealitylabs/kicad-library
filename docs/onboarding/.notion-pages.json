@@ -1,0 +1,20 @@
+{
+ "index": "3ddbc072-402f-816c-b6ad-c9fd2307c2bb",
+ "index_url": "https://app.notion.com/p/KiCad-Onboarding-3ddbc072402f816cb6adc9fd2307c2bb",
+ "children": {
+  "01-setup.md": "3ddbc072-402f-8114-af88-dce2257c0698",
+  "02-finding-parts.md": "3ddbc072-402f-8105-a482-dfc4a76929c8",
+  "03-making-a-symbol.md": "3ddbc072-402f-812d-ae53-c7b212b97b3f",
+  "04-making-a-footprint.md": "3ddbc072-402f-8158-b9fd-daa69da1faa9",
+  "05-submitting-a-part.md": "3ddbc072-402f-81da-90fe-e8c4194c7165",
+  "06-using-the-part.md": "3ddbc072-402f-8153-bbd0-ca7307fdebe2"
+ },
+ "urls": {
+  "01-setup.md": "https://app.notion.com/p/1-Setup-3ddbc072402f8114af88dce2257c0698",
+  "02-finding-parts.md": "https://app.notion.com/p/2-Finding-parts-3ddbc072402f8105a482dfc4a76929c8",
+  "03-making-a-symbol.md": "https://app.notion.com/p/3-Making-a-symbol-3ddbc072402f812dae53c7b212b97b3f",
+  "04-making-a-footprint.md": "https://app.notion.com/p/4-Making-a-footprint-3ddbc072402f8158b9fddaa69da1faa9",
+  "05-submitting-a-part.md": "https://app.notion.com/p/5-Submitting-a-part-3ddbc072402f81da90fee8c4194c7165",
+  "06-using-the-part.md": "https://app.notion.com/p/6-Using-the-part-3ddbc072402f8153bbd0ca7307fdebe2"
+ }
+}
