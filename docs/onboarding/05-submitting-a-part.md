@@ -22,7 +22,7 @@ git checkout -b part/ap2210k-3.3-<your-github-username>
 Branch names: `part/<mpn-lowercase>` for a new part, `fix/<what>` for a correction. The onboarding
 part is the one exception: everyone makes the same AP2210K-3.3, so add your GitHub username to the
 branch. The reference for it is pull request
-[#4](https://github.com/uwrealitylabs/kicad-library/pull/4), which stays open as the example and
+[#5](https://github.com/uwrealitylabs/kicad-library/pull/5), which stays open as the example and
 is never merged.
 
 ## Validate
@@ -68,7 +68,7 @@ Attach a screenshot with the symbol and the footprint next to the datasheet's pi
 compare exactly that, and it turns a day of back and forth into ten minutes.
 
 ![A pull request on the library repo](img/submit-01-pull-request.png)
-*The reference pull request for the AP2210K-3.3 (#4). CI (validate.py) reports at the bottom of the
+*The reference pull request for the AP2210K-3.3 (#5). CI (validate.py) reports at the bottom of the
 conversation.*
 
 ## Review and merge
