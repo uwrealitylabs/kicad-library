@@ -10,7 +10,7 @@ jobs:
       image: kicad/kicad:10.0
       options: --user root
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: python3 scripts/validate.py
         env:
           KICAD_STOCK_FOOTPRINTS: /usr/share/kicad/footprints
