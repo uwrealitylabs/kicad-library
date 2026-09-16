@@ -5,3 +5,4 @@
 fp-info-cache
 ~*.lck
 .DS_Store
+__pycache__/
