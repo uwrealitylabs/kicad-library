@@ -12,6 +12,10 @@ SOT-23-5 package. Open the datasheet now and keep it open:
 | 4 | BYP/ADJ | Passive | bypass capacitor to GND for low noise (10 nF); on the fixed 3.3 V part it only ever sees a capacitor |
 | 5 | VOUT | Power output | the regulator drives this net; ERC flags two outputs fighting |
 
+![Datasheet page 3, pin descriptions](img/datasheet-02-pin-table.png)
+*Datasheet page 3, Pin Descriptions. Use the SOT23-5 column; the SOT23-3 numbering is a different
+package.*
+
 Order code: MPN `AP2210K-3.3TRG1` (the `TRG1` is the reel), LCSC `C176959`.
 
 > **House style, every symbol**
@@ -51,6 +55,9 @@ about 15 mm wide by 10 mm tall, centred on the origin. Keep the grid at 50 mil (
 selector is in the top toolbar. Set the fill to "Fill with body background color" (double-click the
 rectangle to edit it) so the body reads as a chip.
 
+![Place menu in the Symbol Editor](img/part-03b-place-menu.png)
+*Place menu: Draw Rectangles for the body, Draw Pins (`P`) for the pins.*
+
 ## Add the pins
 
 Place → Add Pin (`P`). The Pin Properties dialog opens for each pin:
@@ -74,6 +81,12 @@ The end of the pin with the small circle is the connection point. It must sit on
 away from the body; wires will not snap to a pin that is off grid.
 
 Hover a placed pin and press `E` to edit it, `R` to rotate, `M` to move.
+
+Edit → Pin Table… shows every pin in one grid. Check it against the datasheet table before going
+on: five pins, numbers 1 to 5, the right electrical types, and "Duplicate pins: none".
+
+![Pin Table](img/part-04b-pin-table.png)
+*The Pin Table for the finished symbol. Positions are in mils on the 50 mil grid.*
 
 ## Fill in the properties
 

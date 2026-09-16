@@ -13,6 +13,10 @@ Stock footprints live in libraries named by package: `Package_TO_SOT_SMD`, `Pack
 A stock symbol usually comes with its footprint already assigned; check the package against the
 datasheet anyway (a QFN-20 comes in more than one size).
 
+![Stock and team libraries side by side](img/part-06a-stock-first.png)
+*The Footprint Editor tree filtered to `SOT-23-5`: stock `Package_TO_SOT_SMD` on top, the team's
+`UWRL_Regulator` below. The chooser in the Schematic Editor searches the same way.*
+
 If stock has the exact part: use it, there is nothing to submit.
 If stock has the package but not the part: you make only the symbol and link the stock footprint.
 
@@ -64,8 +68,20 @@ JLC "basic" parts are stocked on every machine and cost nothing extra to place; 
 a small per-part fee, so a basic part wins when two are equivalent. Parts we solder ourselves come
 from DigiKey or Mouser.
 
+![JLCPCB parts search](img/finding-01-jlcpcb-search.png)
+*Search the JLCPCB parts library by MPN. The `C` number, stock and basic/extended status are in the
+result row.*
+
+![JLCPCB part page](img/finding-02-jlcpcb-part.png)
+*The part page: manufacturer, MPN, package, stock, price breaks and a Datasheet link. Everything the
+symbol fields need.*
+
 The datasheet is the manufacturer's PDF. Find it on the manufacturer's site (or through the
 LCSC/DigiKey product page, then follow the link to the PDF). The product page itself is not a
 datasheet; the `Datasheet` field takes the PDF URL.
+
+![Datasheet page 1, pin assignments](img/datasheet-01-pin-assignments.png)
+*Page 1 of the AP2210 datasheet. The pin assignment drawing is where the symbol and the footprint
+both start; keep it open while you draw.*
 
 Next: [3: Making a symbol](03-making-a-symbol.md)

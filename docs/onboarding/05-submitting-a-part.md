@@ -71,6 +71,13 @@ compare exactly that, and it turns a day of back and forth into ten minutes.
 *The reference pull request for the AP2210K-3.3 (#5). CI (validate.py) reports at the bottom of the
 conversation.*
 
+![Files changed](img/submit-02-files-changed.png)
+*Files changed: exactly three, the symbol library, the footprint and the STEP. Anything else is a
+stray file.*
+
+![CI run](img/submit-03-ci.png)
+*The validate workflow. Green means `validate.py` printed 0 errors inside the KiCad 10 container.*
+
 ## Review and merge
 
 CI runs `scripts/validate.py` on every push. The reviewer checks:

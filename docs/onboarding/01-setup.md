@@ -45,6 +45,10 @@ git clone --recurse-submodules https://github.com/uwrealitylabs/<project>
 
 Already cloned without it? Run `git submodule update --init` inside the project.
 
+![The library repository](img/setup-06-repo-layout.png)
+*The library on GitHub. One folder per kind of file, one library per category inside each, and this
+guide under `docs/onboarding`.*
+
 ## Or start a new project
 
 ```sh
