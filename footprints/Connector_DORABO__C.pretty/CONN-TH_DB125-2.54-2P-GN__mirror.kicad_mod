@@ -359,4 +359,16 @@
 			(xyz -0 -0 -180)
 		)
 	)
+	(attr through_hole)
+	(fp_rect
+		(start -3.032353 -3.642219)
+		(end 3.047662 3.357679)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "0e12e5c5-883d-586f-b525-1e8eccb1beb6")
+	)
 )
