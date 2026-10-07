@@ -7,7 +7,7 @@
 		(at 0 -2.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "f72f3a5e-9c79-49d7-801f-08c0eb2577de")
+		(uuid "13423ca6-71b7-42a2-a56c-b33eaf61a250")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "ba6314a5-341b-4284-965a-ef9502de39e5")
+		(uuid "c3b3f4d6-96a4-4512-b554-0c502bf9ff32")
 		(effects
 			(font
 				(size 1 1)
@@ -27,12 +27,12 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "SOT-23-5 land pattern from the Diodes AP2210 datasheet p.2"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7cd421d0-7b62-4fea-84e2-f154a68e67c8")
+		(uuid "0db53e74-007f-41a1-b680-ce518b871d2b")
 		(effects
 			(font
 				(size 1 1)
@@ -40,12 +40,12 @@
 			)
 		)
 	)
-	(property "Description" ""
+	(property "Description" "SOT-23-5 SOT25 AP2210"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "7d5cc1ad-b8c7-4799-993d-37edb9e7f7a9")
+		(uuid "4f7e4c4d-68ed-475e-9093-385ba503dc3d")
 		(effects
 			(font
 				(size 1 1)
@@ -76,11 +76,11 @@
 		(uuid "0a33203f-1cdf-4f95-8ca2-89df6cbad3e6")
 	)
 	(fp_circle
-		(center -2 -1)
-		(end -1.95 -1)
+		(center -2.15 -0.95)
+		(end -2.05 -0.95)
 		(stroke
-			(width 0.1)
-			(type default)
+			(width 0.2)
+			(type solid)
 		)
 		(fill no)
 		(layer "F.SilkS")
