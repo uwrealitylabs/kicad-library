@@ -305,13 +305,16 @@
 		(embedded_fonts no)
 	)
 	(symbol "AP2210K-3.3"
+		(pin_names
+			(offset 1.016)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 0 6.35 0)
+			(at -12.192 13.716 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -321,7 +324,7 @@
 			)
 		)
 		(property "Value" "AP2210K-3.3"
-			(at 0 0 0)
+			(at -6.096 11.176 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -331,7 +334,7 @@
 			)
 		)
 		(property "Footprint" "UWRL_Regulator:SOT-23-5_AP2210K"
-			(at 0 0 0)
+			(at 29.718 26.416 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -342,7 +345,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2210.pdf"
-			(at 0 0 0)
+			(at 39.116 20.574 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -353,7 +356,7 @@
 			)
 		)
 		(property "Description" "300 mA low-dropout regulator, 3.3 V fixed, enable, bypass pin, SOT-23-5"
-			(at 0 0 0)
+			(at 49.022 17.526 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -364,7 +367,7 @@
 			)
 		)
 		(property "Manufacturer" "Diodes Incorporated"
-			(at 0 0 0)
+			(at 41.148 23.622 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -375,7 +378,7 @@
 			)
 		)
 		(property "MPN" "AP2210K-3.3TRG1"
-			(at 0 0 0)
+			(at 20.32 23.368 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -386,7 +389,7 @@
 			)
 		)
 		(property "LCSC" "C176959"
-			(at 0 0 0)
+			(at 16.256 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -396,106 +399,104 @@
 				)
 			)
 		)
-		(symbol "AP2210K-3.3_0_1"
+		(symbol "AP2210K-3.3_1_1"
 			(rectangle
-				(start -8.89 5)
-				(end 8.89 -5)
+				(start -12.7 8.89)
+				(end 12.7 -8.89)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
-		)
-		(symbol "AP2210K-3.3_1_1"
 			(pin power_in line
-				(at -11.43 2.54 0)
+				(at -15.24 6.35 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
 						(font
-							(size 1.37 1.37)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "1"
 					(effects
 						(font
-							(size 1.37 1.37)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
 			(pin power_in line
-				(at 0 -7.62 90)
+				(at 0 -11.43 90)
 				(length 2.54)
 				(name "GND"
 					(effects
 						(font
-							(size 1.37 1.37)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "2"
 					(effects
 						(font
-							(size 1.37 1.37)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
 			(pin input line
-				(at -11.43 -2.54 0)
+				(at -15.24 -5.08 0)
 				(length 2.54)
 				(name "EN"
 					(effects
 						(font
-							(size 1.37 1.37)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "3"
 					(effects
 						(font
-							(size 1.37 1.37)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
 			(pin passive line
-				(at 11.43 -2.54 180)
+				(at 15.24 -5.08 180)
 				(length 2.54)
 				(name "BYP/ADJ"
 					(effects
 						(font
-							(size 1 1)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "4"
 					(effects
 						(font
-							(size 1 1)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
 			(pin power_out line
-				(at 11.43 2.54 180)
+				(at 15.24 6.35 180)
 				(length 2.54)
 				(name "VOUT"
 					(effects
 						(font
-							(size 1.37 1.37)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "5"
 					(effects
 						(font
-							(size 1.37 1.37)
+							(size 1.27 1.27)
 						)
 					)
 				)
