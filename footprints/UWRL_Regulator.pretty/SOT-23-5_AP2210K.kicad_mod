@@ -3,11 +3,13 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
+	(descr "SOT-23-5 land pattern from the Diodes AP2210 datasheet p.29")
+	(tags "SOT-23-5 SOT25 AP2210")
 	(property "Reference" "REF**"
-		(at 0 -2.5 0)
+		(at 0 -2.8 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "0cec936b-79ae-487d-9044-ad1b6f15f71f")
+		(uuid "e48938ba-2d0d-46c7-8985-fa5ed3942ea3")
 		(effects
 			(font
 				(size 1 1)
@@ -16,10 +18,10 @@
 		)
 	)
 	(property "Value" "SOT-23-5_AP2210K"
-		(at 0 2.5 0)
+		(at 0 3.1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "68220dbf-c366-41d3-9cab-daf762bc54c3")
+		(uuid "e19fcf8f-f849-4aac-96b7-35047e9a2893")
 		(effects
 			(font
 				(size 1 1)
@@ -27,64 +29,62 @@
 			)
 		)
 	)
-	(property "Datasheet" "SOT-23-5 land pattern from the Diodes AP2210 datasheet p.2"
+	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "cec1078b-52ce-4ea6-b433-a6b38ab8e6e7")
+		(uuid "0b0299b6-82c8-453b-aeda-34bfa06e09c1")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
 			)
 		)
 	)
-	(property "Description" "SOT-23-5 SOT25 AP2210"
+	(property "Description" ""
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "4666bb71-70a1-427c-882a-a0d0774a4068")
+		(uuid "9c1e2902-f08c-494d-9b74-7fe1ba65efea")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
 			)
 		)
 	)
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start 1 -1.5)
-		(end -1 -1.5)
+		(start 0.9 -1.5)
+		(end -0.9 -1.5)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "2a9f2929-cba1-4753-bb96-4068faa8f25a")
+		(uuid "4394fafe-0ed3-401c-b6fb-f6e8b4e383fa")
 	)
 	(fp_line
-		(start 1 1.5)
-		(end -1 1.5)
+		(start 0.9 1.5)
+		(end -0.9 1.5)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "0a33203f-1cdf-4f95-8ca2-89df6cbad3e6")
+		(uuid "0c1c7d2d-89e2-4ebb-bf87-c4a36546d1ac")
 	)
 	(fp_circle
-		(center -2.15 -0.95)
-		(end -2.05 -0.95)
+		(center -2.075 -1)
+		(end -2 -1)
 		(stroke
-			(width 0.2)
+			(width 0.1)
 			(type solid)
 		)
-		(fill no)
+		(fill yes)
 		(layer "F.SilkS")
-		(uuid "2dbf3c85-9cf3-4bc7-8142-8ded3837e22e")
+		(uuid "6374f3a1-fba4-4b69-bdc6-abc02d110af6")
 	)
 	(fp_rect
 		(start -2.05 -1.7)
@@ -95,63 +95,25 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "17a0281e-616f-4adf-b178-4877f8f52860")
+		(uuid "217f657d-a5e6-4f5c-a496-aac8c5448b25")
 	)
-	(fp_line
-		(start -0.8 -1)
-		(end -0.3128 -1.45)
+	(fp_poly
+		(pts
+			(xy -0.8 1.45) (xy 0.8 1.45) (xy 0.8 -1.45) (xy -0.4 -1.45) (xy -0.8 -1.05)
+		)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "b86899d3-a9f1-4111-9dc6-f6a12b82fcd6")
-	)
-	(fp_line
-		(start -0.8 1.45)
-		(end -0.8 -1)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "F.Fab")
-		(uuid "59ebd68a-a378-43af-8e6e-255c6ef30ab7")
-	)
-	(fp_line
-		(start -0.8 1.45)
-		(end 0.8 1.45)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "a7a1f9a4-d86b-4259-b928-b093b49fa92b")
-	)
-	(fp_line
-		(start -0.3128 -1.45)
-		(end 0.8 -1.45)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "ac44d4a9-8d66-4ec9-a4ca-cc8fb8ae9638")
-	)
-	(fp_line
-		(start 0.8 1.45)
-		(end 0.8 -1.45)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "f85d2dc7-5e6a-48be-a95a-484cb0001659")
+		(uuid "6eae5163-e286-4e88-acb6-9f134cbe1697")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "c14771ec-aced-445a-aca2-5110c1e6bea7")
+		(uuid "e0702798-55ec-4c91-b947-8d01c63bf784")
 		(effects
 			(font
 				(size 1 1)
@@ -164,35 +126,35 @@
 		(size 1 0.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
-		(uuid "3b5796fb-76bb-4e63-9b8e-6b39ac8a3042")
+		(uuid "2bb6e5f5-6e35-4f2b-b8ef-5cdab69e3bbf")
 	)
 	(pad "2" smd roundrect
 		(at -1.3 0)
 		(size 1 0.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
-		(uuid "8e73ed2e-a14c-4d4c-9899-779e05622916")
+		(uuid "6a4baa2b-748f-4be5-a6b6-8cc9c818dcf0")
 	)
 	(pad "3" smd roundrect
 		(at -1.3 0.95)
 		(size 1 0.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
-		(uuid "59122771-b1fc-41df-b792-c6382e63323d")
+		(uuid "3409341b-3313-401e-b633-f903d9a0a5b3")
 	)
 	(pad "4" smd roundrect
 		(at 1.3 0.95)
 		(size 1 0.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
-		(uuid "a05995d0-aab7-4d86-a82c-9efa55bea928")
+		(uuid "fa7ec63e-29cb-4807-987a-d14d1f047f7b")
 	)
 	(pad "5" smd roundrect
 		(at 1.3 -0.95)
 		(size 1 0.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
-		(uuid "cc7bbf17-b1b6-4494-a4a1-c15280ade5c4")
+		(uuid "146a5860-d8f3-4693-a275-895d6539be92")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/kicad-library/3dmodels/UWRL_Regulator.3dshapes/SOT-23-5.step"
